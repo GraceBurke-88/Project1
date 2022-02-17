@@ -49,7 +49,7 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
                 for (var j = 0; j < results.length; j++) {
                     if (index === i) {
                         console.log(result.name);
-                        everyCard[i].innerHTML = '<img src='+result.image+' class="imageThumb">' + '\n' + '<span class="text-1">'+result.name+'</span>'+ '<span class="text-2">'+" $" + result.price+'</span>' ;
+                        everyCard[i].innerHTML = '<img src='+result.image+' class="imageThumb" alt='+ result.name +'>' + '\n' + '<span class="text-1">'+result.name+'</span>'+ '<span class="text-2">'+" $" + result.price+'</span>' ;
                         //return result.name;
                     }
 
