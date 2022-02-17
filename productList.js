@@ -21,7 +21,10 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
         { _id: '007', name: 'Sweater Vest', price:'3', published: false,category:'Tops', image: "images/sweaterVest.jpeg" },
         { _id: '304', name: 'Dress', price:'1', published: true, category:'Other', image: "images/Dress.jpeg" },
         { _id: '729', name: 'Necklace', price:'1', published: false, category:'Accessories', image: "images/necklace.jpeg"},
-        { _id: '734', name: 'Bag', price:'12', published: true, category:'Accessories', image: "images/bag2.jpeg"},
+        { _id: '734', name: 'Saddle Bag', price:'12', published: true, category:'Accessories', image: "images/bag2.jpeg"},
+        { _id: '739', name: 'Linen Blazer', price:'9', published: true, category:'Tops', image: "images/blazer2.jpeg"},
+        { _id: '739', name: 'Trouser', price:'15', published: true, category:'Other', image: "images/trousers.jpg"},
+        { _id: '739', name: 'Flowy Blouse', price:'10', published: true, category:'Tops', image: "images/flowy_blouse.jpg"}
     ];
 
 
@@ -46,7 +49,7 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
                 for (var j = 0; j < results.length; j++) {
                     if (index === i) {
                         console.log(result.name);
-                        everyCard[i].innerHTML = '<img src='+result.image+' class="imageThumb">' + result.name + " $" + result.price ;
+                        everyCard[i].innerHTML = '<img src='+result.image+' class="imageThumb">' + '\n' + '<span class="text-1">'+result.name+'</span>'+ '<span class="text-2">'+" $" + result.price+'</span>' ;
                         //return result.name;
                     }
 

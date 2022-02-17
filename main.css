@@ -6,6 +6,26 @@ html, body {
     font-family: Lora;
 
 }
+
+.jumbotron{
+    background-color: #d4dbdb;
+    color: #3333FF;
+}
+
+
+.jumbotron .w3-round{
+    height: 175px;
+    flex: 0 0 175px;
+}
+
+
+.text-1{
+    color: darkslategrey;
+    white-space: pre-line;
+}
+.text-2{
+    color: darkgray;
+}
 .header{
     color: #3333FF;
     background-color: #f3f1f1;
@@ -139,12 +159,15 @@ h1{
     .content-container .card {
         flex-basis: 400px;
         height: 330px;
-        text-align: justify;
+        text-align: unset;
     }
     .content-container .imageThumb {
         height: 250px;
         flex-basis: 250px;
-        padding: 20px 1px 1px 80px;
+        padding: 20px 1px 1px 60px;
+    }
+    .text-1{
+        padding-left: 50px;
     }
 
 }
@@ -192,6 +215,9 @@ h1{
         padding-right: 1px;
         padding-left: 1px;
         padding-bottom: 1px;
+    }
+    .text-1{
+        padding: unset;
     }
 
 
