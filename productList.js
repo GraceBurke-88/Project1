@@ -71,30 +71,6 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
     renderList2(mockDatabase);
     //console.log( "2");
 
-
-    /*
-        function renderList (results) {
-            var tableBody = document.querySelector('#results-table tbody');
-            // clear out inner HTML to get rid of any older results
-            tableBody.innerHTML = '';
-            // Map each database record to a string containing the HTML for it's row
-            var tableRows = results.map(function (result, index) {
-                return '<tr><td>' + index + '</td><td>' + result.name + '</td><td>' +
-                    result._id + '</td><td>' + result.price + '</td><td>' + result.published + '</td><td>' + result.category + '</td></td>';
-            });
-            // Set the contents of the table body to the new set of rendered HTML rows
-            tableRows.forEach(function (row) {
-                tableBody.innerHTML += row; // += adds to HTML instead of overwriting it entirely.
-            });
-            // Lower level scope once again overwrites what's above it.
-            var foo = 'renderList';
-            console.log(foo); // 'renderList'
-        }
-        //console.log(price + "2");
-        renderList(mockDatabase);
-
-     */
-
     // Function to Order results list
     function orderBy(sortValue) {
         // Sort method varies based on what type of value we're sorting
@@ -202,37 +178,6 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
         var value = event.target.value === 'true';
         togglePublished(value);
     });
-
-    //added
-    /*
-function togglePrice(lowPrice) {
-
-        var filteredResults = mockDatabase.filter(function (result) {
-            //console.log(price);
-            if(result.price <10){
-                console.log(result.price);
-                return lowPrice || result.price
-            }
-
-        });
-    renderList(filteredResults);
-    //console.log(renderList(filteredResults))
-
-}
-togglePrice();
-
-
-//Change events trigger after the value of a form input changes
-document.querySelector('#price').addEventListener('change', function(event){
-
-    // in this case value is a string that we need to convert to a boolean
-   var value = event.target.value;
-   console.log("value" +value)
-   //var value = event.target.value === 'true';
-   togglePrice(value);
-});
-
-*/
 
 })(); // Wrap entire file in self executing function.
       // Keeping all variables declared in this file inside a local scope.
